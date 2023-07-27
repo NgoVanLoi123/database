@@ -1,4 +1,6 @@
+### Bài tập 
 Tạo bảng Post
+
 ```sql
 create table Post(
 title varchar(250), 
@@ -15,7 +17,7 @@ insert into movie.Post(title,author,created,content,category,is_published)
 values('Experiences for backpacking trip','motogo','2021-07-01 9:42:05','Buy cheap tickets now,Light luggage','Tourism',1);
 
 ```
-<!-- ![Alt text](Post.png) -->
+
 
 Tạo bảng Product
 ```sql
@@ -27,7 +29,9 @@ create table Product(
     unit_price int,
     category set('Quần áo','Mỹ phẩm','Đồ chơi','Dụng cụ học tập','Máy tính','Di động','Điện tự dân dụng','Văn phòng')
     );
+
 ```
+ ![](./Post.png)
 
 Chèn dữ liệu vào bảng Product
 ```sql
@@ -35,4 +39,6 @@ insert into movie.Product(name,description,madein,manufacturer,unit_price,catego
        values('Laptop Dell Inspiron','Intel Core i5 1335U | 8GB | 512 GB | 14 inch FHD',
               'Americal','Michael Dell','18000000','Máy tính')
 ```
-<!-- ![Alt text](Product.png) -->
+![](./Product.png)
+
+
