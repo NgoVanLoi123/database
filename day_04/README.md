@@ -157,11 +157,11 @@ select 'California University' as university,count(score) as excellent_Student f
     )
     select 
     case 
+     when max(excellent_Student)=(select excellent_Student from Excellent where university='New York University') and max(excellent_Student)=(select excellent_Student from Excellent where university='California University') then'No winner'
     when max(excellent_Student)=(select excellent_Student from Excellent where university='New York University')
     then 'New York University'
      when max(excellent_Student)=(select excellent_Student from Excellent where university='California University')
     then 'California University'
-    else 'No Winner'
     end as 'winner'
     from Excellent
    
@@ -175,6 +175,11 @@ select 'California University' as university,count(score) as excellent_Student f
 ![Alt text](EX2.1.png)
 ![Alt text](EX2.2.png)
 ![Alt text](EX2.3.png)
+
+### EX3
+![Alt text](EX3.1.png)
+![Alt text](EX3.2.png)
+![Alt text](EX3.3.png)
 
 
 
