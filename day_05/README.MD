@@ -4,7 +4,7 @@ select teacher_id, count(distinct subject_id) as cnt
 from Teacher
 group by teacher_id
 ```
-![Alt text](2356.png)
+![Alt text](1356.png)
 
 ### 1378. Replace Employee ID With The Unique Identifier
 ```sql
@@ -70,7 +70,7 @@ from Visits v inner join Transactions t
 on v.visit_id=t.visit_id)
 group by customer_id
 ```
-![Alt text](image.png)
+![Alt text](1581.png)
 
 ### 1179. Reformat Department Table
 ```sql
