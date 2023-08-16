@@ -55,7 +55,7 @@ INNER JOIN Products p ON c.category_id = p.category_id
 INNER JOIN OrderDetails od ON p.product_id = od.product_id
 GROUP BY c.category_name;
 ```
-![Alt text](7.png)
+![Alt text](7..png)
 
 ### 8.Lấy thông tin về top 3 khách hàng có số lượng sản phẩm đặt hàng lớn nhất (customer_id, customer_name, total_ordered)
 ```sql
