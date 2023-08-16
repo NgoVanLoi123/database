@@ -83,14 +83,7 @@ HAVING total_orders > 1;
 ![Alt text](9.png)
 
 ### 10.Lấy thông tin về các sản phẩm đã được đặt hàng nhiều lần nhất và số lượng đơn đặt hàng tương ứng (product_id, product_name, total_ordered)
-```sql
-SELECT Products.product_id, Products.product_name, COUNT(DISTINCT OrderDetails.order_id) AS total_ordered
-FROM Products
-INNER JOIN OrderDetails ON Products.product_id = OrderDetails.product_id
-GROUP BY Products.product_id, Products.product_name
-ORDER BY total_ordered DESC
-Limit 3
-```
+
 ```sql
 SELECT Products.product_id, Products.product_name, COUNT(DISTINCT OrderDetails.order_id) AS total_ordered
 FROM Products
