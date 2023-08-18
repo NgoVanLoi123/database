@@ -57,3 +57,19 @@ and b.student_name!=c.student_name
 and c.student_name!=a.student_name
 ```
 ![Alt text](1623.png)
+
+
+### 1421. NPV Queries
+```sql
+select q.id,q.year,case when n.npv is null then '0' else n.npv end as nvp from Queries q left join NPV n on n.id=q.id and q.year=n.year
+```
+![Alt text](image.png)
+
+
+### 1069. Product Sales Analysis II
+```sql
+select s.product_id,sum(s.quantity) as product_name from Sales s inner join Product p 
+on s.product_id=p.product_id
+group by s.product_id
+```
+![Alt text](1069.png)
