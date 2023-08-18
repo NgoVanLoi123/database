@@ -63,7 +63,7 @@ and c.student_name!=a.student_name
 ```sql
 select q.id,q.year,case when n.npv is null then '0' else n.npv end as nvp from Queries q left join NPV n on n.id=q.id and q.year=n.year
 ```
-![Alt text](image.png)
+![Alt text](1421.png)
 
 
 ### 1069. Product Sales Analysis II
